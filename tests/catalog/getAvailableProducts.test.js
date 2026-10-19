@@ -2,7 +2,7 @@ const products = require('../../src/data/products');
 const { getAvailableProducts } = require('../../src/catalog');
 
 describe('getAvailableProducts', () => {
-  test('возвращает товар, если он есть в наличии', () => {
+  test('возвращает товар, если он есть в наличии', () => { 
     const catalog = [{ id: 1, stock: 1 }];
     expect(getAvailableProducts(catalog)).toEqual([{ id: 1, stock: 1 }]);
   });
