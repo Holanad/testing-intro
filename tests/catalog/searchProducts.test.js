@@ -24,7 +24,7 @@ describe('searchProducts', () => {
     expect(searchProducts(products, '')).toEqual(products);
   });
   test("строка из пробелов возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
-    expect(searchProducts(products, '    ')).toEqual(products);
+    expect(searchProducts(products, '   ')).toEqual(products);
   });
   test("'\\t\\n' возвращает товары с ID [1, 2, 3, 4, 5, 6]", () => {
     expect(searchProducts(products, '\t\n')).toEqual(products);
